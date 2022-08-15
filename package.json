@@ -1,0 +1,29 @@
+{
+  "name": "dd-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "commit": "git add . && git cz",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "3.0.3",
+    "@vitejs/plugin-vue-jsx": "2.0.0",
+    "cz-customizable": "^6.9.1",
+    "vite": "3.0.7"
+  },
+  "dependencies": {
+    "vue": "3.2.37"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}

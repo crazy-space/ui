@@ -1,0 +1,33 @@
+<!--
+ * @Author: Youzege
+ * @Date: 2022-08-15 21:31:17
+ * @LastEditors: Youzege
+ * @LastEditTime: 2022-08-15 21:39:45
+ * @FilePath: \dd-ui\demo\es\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>导入所有组件</h1>
+    <div id="app"></div>
+    <script type="module">
+      import { createApp } from 'vue/dist/vue.esm-bundler.js'
+      import DDUI, { DButton, JSXButton } from '../../dist/dd-ui.mjs'
+
+      createApp({
+        template: `
+      <JSXButton/>
+      <DButton/>
+    `
+      })
+        .use(DDUI)
+        .mount('#app')
+    </script>
+  </body>
+</html>
